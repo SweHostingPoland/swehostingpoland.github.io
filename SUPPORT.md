@@ -1,3 +1,3 @@
 # Support
 
-No support is currently provided for this project.
+Support is provided at our [Dashboard](https://dash.swehosting.pl).
