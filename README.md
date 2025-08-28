@@ -1,6 +1,6 @@
 <div align="center">
 
-# :sparkles: Special GitHub Files :sparkles:
+# :D
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -24,4 +24,5 @@ Hi!
 [license-url]: [https://github.com/danpoynor/special-github-files/blob/master/LICENSE.txt](https://swehosting.pl)
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: [https://linkedin.com/in/danpoynor](https://swehosting.pl)
+
 
