@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweHosting - Premium Web Hosting Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-server"></i>
+                <span>SweHosting</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-page="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#hosting" class="nav-link" data-page="hosting">
+                    <i class="fas fa-server"></i>
+                    <span>Hosting</span>
+                </a>
+                <a href="#domains" class="nav-link" data-page="domains">
+                    <i class="fas fa-globe"></i>
+                    <span>Domains</span>
+                </a>
+                <a href="#specs" class="nav-link" data-page="specs">
+                    <i class="fas fa-microchip"></i>
+                    <span>Specs</span>
+                </a>
+                <a href="#contact" class="nav-link" data-page="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn btn-outline-nav" onclick="redirectToDiscord()">
+                    <i class="fab fa-discord"></i>
+                    Join Discord
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-indicator" id="nav-indicator"></div>
+    </nav>
+
+    <div class="page-content">
+        <div class="page active" id="home-page">
+            <section class="hero">
+                <div class="hero-background">
+                    <div class="grid-overlay"></div>
+                </div>
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Premium Web Hosting Solutions</h1>
+                        <p class="hero-subtitle">SweHosting provides high-performance servers with trust, reliability and 24/7 support for all your hosting needs.</p>
+                        <button class="btn btn-primary" onclick="redirectToDiscord()">
+                            Get Started <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Why should I choose SweHosting?</h2>
+                        <p>SweHosting provides cheap web hosting and domains with almost no ease or effort required.</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>High-Performance Servers</h3>
+                            <p>Our servers are powered by AMD EPYC and Intel Xeon processors, which makes your website run smoothly.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>99.9% Uptime Gurantee</h3>
+                            <p>We keep your website online with our security layers (incl. anti-DDoS, reverse proxying and 24/7 servers), performance servers, ensuring your website never stops.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>NVMe SSD Storage</h3>
+                            <p>Lightning-fast storage solutions that load your websites and applications in milliseconds, providing a better experience for your visitors and customers.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>High-Speed Network</h3>
+                            <p>1-10 Gbps network speeds ensures that your content reaches users worldwide quickly and efficiently.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3>Scalable Resources</h3>
+                            <p>Easily upgrade your hosting plan as your business grows or becomes smaller, with just a few clicks and zero downtime.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <h3>24/7 Expert Support</h3>
+                            <p>Our support team is always ready to help you with any questions or issues you may encounter with our hosting services.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="page" id="hosting-page">
+            <section class="page-hero">
+                <div class="container">
+                    <h1>Hosting Plans</h1>
+                    <p>Choose the perfect hosting plan for your needs with our recommended options.</p>
+                </div>
+            </section>
+
+            <section class="hosting-plans">
+                <div class="container">
+                    <div class="plans-grid">
+                        <div class="plan-card">
+                            <div class="plan-header">
+                                <h3>Starter</h3>
+                                <div class="plan-price">
+                                    <span class="price">$1</span>
+                                    <span class="period">/month</span>
+                                </div>
+                            </div>
+                            <div class="plan-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-memory"></i>
+                                    <span>512 MB RAM</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>0.25 Core</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-hdd"></i>
+                                    <span>10 GB SSD</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-wifi"></i>
+                                    <span>500 GB Bandwidth</span>
+                                </div>
+                            </div>
+                            <div class="plan-features">
+                                <div class="feature-item included">
+                                    <i class="fas fa-check"></i>
+                                    <span>Free setup</span>
+                                </div>
+                                <div class="feature-item included">
+                                    <i class="fas fa-check"></i>
+                                    <span>24/7 support</span>
+                                </div>
+                                <div class="feature-item not-included">
+                                    <i class="fas fa-times"></i>
+                                    <span>Automated backups</span>
+                                </div>
+                                <div class="feature-item not-included">
+                                    <i class="fas fa-times"></i>
+                                    <span>DDoS protection</span>
+                                </div>
+                            </div>
+                            <div class="plan-addons">
+                                <h4>Addons</h4>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Reverse Proxy (custom domain)</span>
+                                        <small>$5/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('starter', 'proxy', 5, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Databases</span>
+                                        <small>$2/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('starter', 'db', 2, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Allocations</span>
+                                        <small>$1/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('starter', 'alloc', 1, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Subdomains</span>
+                                        <small>$0.5/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('starter', 'subdomain', 0.5, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="plan-total">
+                                Total: <span id="starter-total">$1.00</span>/month
+                            </div>
+                            <button class="btn btn-outline" onclick="redirectToDiscord()">Buy Now</button>
+                        </div>
+
+                        <div class="plan-card popular">
+                            <div class="popular-badge">Most Popular</div>
+                            <div class="plan-header">
+                                <h3>Business</h3>
+                                <div class="plan-price">
+                                    <span class="price">$10</span>
+                                    <span class="period">/month</span>
+                                </div>
+                            </div>
+                            <div class="plan-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-memory"></i>
+                                    <span>2 GB RAM</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>1 Core</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-hdd"></i>
+                                    <span>20 GB SSD</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-wifi"></i>
+                                    <span>2 TB Bandwidth</span>
+                                </div>
+                            </div>
+                            <div class="plan-features">
+                                <div class="feature-item included">
+                                    <i class="fas fa-check"></i>
+                                    <span>Free Setup</span>
+                                </div>
+                                <div class="feature-item included">
+                                    <i class="fas fa-check"></i>
+                                    <span>24/7 support</span>
+                                </div>
+                                <div class="feature-item included">
+                                    <i class="fas fa-check"></i>
+                                    <span>Automated backups</span>
+                                </div>
+                                <div class="feature-item included">
+                                    <i class="fas fa-check"></i>
+                                    <span>DDoS protection</span>
+                                </div>
+                            </div>
+                            <div class="plan-addons">
+                                <h4>Addons</h4>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Reverse Proxy (custom domain)</span>
+                                        <small>$5/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('business', 'proxy', 5, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Databases</span>
+                                        <small>$2/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('business', 'db', 2, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Allocations</span>
+                                        <small>$1/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('business', 'alloc', 1, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Subdomains</span>
+                                        <small>$0.5/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('business', 'subdomain', 0.5, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="plan-total">
+                                Total: <span id="business-total">$10.00</span>/month
+                            </div>
+                            <button class="btn btn-primary" onclick="redirectToDiscord()">Buy Now</button>
+                        </div>
+
+                        <div class="plan-card">
+                            <div class="plan-header">
+                                <h3>Enterprise</h3>
+                                <div class="plan-price">
+                                    <span class="price">$15</span>
+                                    <span class="period">/month</span>
+                                </div>
+                            </div>
+                            <div class="plan-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-memory"></i>
+                                    <span>4 GB RAM</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>2 Cores</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-hdd"></i>
+                                    <span>40 GB SSD</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-wifi"></i>
+                                    <span>4 TB Bandwidth</span>
+                                </div>
+                            </div>
+                            <div class="plan-features">
+                                <div class="feature-item included">
+                                    <i class="fas fa-check"></i>
+                                    <span>Free setup</span>
+                                </div>
+                                <div class="feature-item included">
+                                    <i class="fas fa-check"></i>
+                                    <span>24/7 support</span>
+                                </div>
+                                <div class="feature-item included">
+                                    <i class="fas fa-check"></i>
+                                    <span>Automated backups</span>
+                                </div>
+                                <div class="feature-item included">
+                                    <i class="fas fa-check"></i>
+                                    <span>DDoS protection</span>
+                                </div>
+                            </div>
+                            <div class="plan-addons">
+                                <h4>Addons</h4>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Reverse Proxy</span>
+                                        <small>$5/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('enterprise', 'proxy', 5, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Databases</span>
+                                        <small>$2/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('enterprise', 'db', 2, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Allocations</span>
+                                        <small>$1/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('enterprise', 'alloc', 1, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="addon-item">
+                                    <div class="addon-info">
+                                        <span>Subdomains</span>
+                                        <small>$0.5/month</small>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" onchange="updatePrice('enterprise', 'subdomain', 0.5, this.checked)">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="plan-total">
+                                Total: <span id="enterprise-total">$15.00</span>/month
+                            </div>
+                            <button class="btn btn-outline" onclick="redirectToDiscord()">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="page" id="domains-page">
+            <section class="page-hero">
+                <div class="container">
+                    <h1>Domain Registration</h1>
+                    <p>Find and register your perfect domain name with budget friendly prices and reliability.</p>
+                </div>
+            </section>
+
+            <section class="domain-registration">
+                <div class="container">
+                    <div class="domain-search-card">
+                        <div class="search-header">
+                            <h3>Domain Search</h3>
+                            <p>Check availability and register your domain in seconds</p>
+                        </div>
+                        <div class="search-form">
+                            <div class="search-input-group">
+                                <input type="text" id="domain-search" placeholder="Enter your domain name">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <button class="btn btn-primary" onclick="searchDomain()">Search</button>
+                        </div>
+                    </div>
+
+                    <div id="search-results" class="search-results" style="display: none;">
+                        <h3>Search Results</h3>
+                        <div class="results-table">
+                            <div class="table-header">
+                                <span>Domain Name</span>
+                                <span>Status</span>
+                                <span>Price</span>
+                                <span>Action</span>
+                            </div>
+                            <div id="results-body" class="table-body">
+                                <!-- i cant tell what's happening here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="domain-pricing">
+                        <div class="pricing-header">
+                            <h3>Domain Pricing</h3>
+                            <p>Competitive prices for all popular TLDs</p>
+                        </div>
+                        <div class="pricing-grid">
+                            <div class="pricing-card">
+                                <div class="pricing-header-card">
+                                    <h4>.com</h4>
+                                    <span class="popular-badge">Popular Choice</span>
+                                </div>
+                                <div class="pricing-price">$3/year</div>
+                                <button class="btn btn-primary" onclick="redirectToDiscord()">Register Now</button>
+                            </div>
+                            <div class="pricing-card">
+                                <div class="pricing-header-card">
+                                    <h4>.net</h4>
+                                </div>
+                                <div class="pricing-price">$6/year</div>
+                                <button class="btn btn-primary" onclick="redirectToDiscord()">Register Now</button>
+                            </div>
+                            <div class="pricing-card">
+                                <div class="pricing-header-card">
+                                    <h4>.se</h4>
+                                    <span class="popular-badge">Popular Choice</span>
+                                </div>
+                                <div class="pricing-price">$2/year</div>
+                                <button class="btn btn-primary" onclick="redirectToDiscord()">Register Now</button>
+                            </div>
+                            <div class="pricing-card">
+                                <div class="pricing-header-card">
+                                    <h4>.pl</h4>
+                                    <span class="popular-badge">Popular Choice</span>
+                                </div>
+                                <div class="pricing-price">$2.5/year</div>
+                                <button class="btn btn-primary" onclick="redirectToDiscord()">Register Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="page" id="specs-page">
+            <section class="page-hero">
+                <div class="container">
+                    <h1>Technical Specifications</h1>
+                    <p>Our state-of-the-art hardware ensures optimal performance for all your hosting needs</p>
+                </div>
+            </section>
+
+            <section class="technical-specs">
+                <div class="container">
+                    <div class="specs-grid">
+                        <div class="spec-card">
+                            <div class="spec-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3>Processors</h3>
+                            <p>AMD EPYC & Intel Xeon processors delivering exceptional performance and reliability</p>
+                        </div>
+                        <div class="spec-card">
+                            <div class="spec-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Memory</h3>
+                            <p>Up to 512 GB DDR4/DDR5 RAM for lightning-fast application response times</p>
+                        </div>
+                        <div class="spec-card">
+                            <div class="spec-icon">
+                                <i class="fas fa-hdd"></i>
+                            </div>
+                            <h3>Storage</h3>
+                            <p>High-speed NVMe SSD storage providing superior read/write performance</p>
+                        </div>
+                        <div class="spec-card">
+                            <div class="spec-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <h3>Network</h3>
+                            <p>1-10 Gbps uplink connections ensuring minimal latency and maximum throughput</p>
+                        </div>
+                    </div>
+                    <div class="enterprise-cta">
+                        <h3>Enterprise-Grade Hardware</h3>
+                        <p>All our servers are built with premium components and maintained in secure, climate-controlled data centers</p>
+                        <button class="btn btn-primary" onclick="redirectToDiscord()">Contact Our Team</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="page" id="contact-page">
+            <section class="page-hero">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    <p>Connect with our team for support and inquiries through our Discord community.</p>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <div class="container">
+                    <div class="contact-info-centered">
+                        <h3>Get in Touch</h3>
+                        <p>Join our Discord community for instant support and connect with other users. Our team is available 24/7 to help you with any questions.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-discord"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Discord Community</h4>
+                                    <p>Join our active community for support, updates, and discussions with other users</p>
+                                    <button class="btn btn-primary" onclick="redirectToDiscord()">
+                                        Join Discord <i class="fas fa-external-link-alt"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>24/7 Support</h4>
+                                    <p>Our technical support team is available around the clock to assist you</p>
+                                    <span class="contact-info-text">Available via Discord</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Quick Response</h4>
+                                    <p>Average response time is under 30 minutes during business hours</p>
+                                    <span class="contact-info-text">Instant help available</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>SweHosting</h3>
+                    <p>Premium web hosting solutions for businesses and individuals.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Web Hosting</li>
+                        <li>Domain Registration</li>
+                        <li>VPS Hosting</li>
+                        <li>Dedicated Servers</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li>Knowledge Base</li>
+                        <li>Discord Community</li>
+                        <li>Contact Us</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li>Terms of Service</li>
+                        <li>Privacy Policy</li>
+                        <li>Refund Policy</li>
+                        <li>GDPR Compliance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SweHosting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
