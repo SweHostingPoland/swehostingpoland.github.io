@@ -1161,4 +1161,9 @@ input:checked + .slider:before {
     .pricing-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+
+    .test-test {
+        test: 0.1rem;
+    }
+
 }
