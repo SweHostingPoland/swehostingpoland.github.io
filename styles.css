@@ -1166,4 +1166,15 @@ input:checked + .slider:before {
         test: 0.1rem;
     }
 
+    .footer-section ul li a {
+    color: inherit;        /* use the li's color (#94a3b8) */
+    text-decoration: none; /* remove underline */
+    display: block;        /* makes whole li clickable */
+    }
+
+   .footer-section ul li a:hover {
+    color: #60a5fa;        /* same hover color as li */
+    }
+
 }
+
