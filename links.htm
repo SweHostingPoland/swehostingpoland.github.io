@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Links Redirect</title>
+<script>
+  // Wait for the page to load
+  window.onload = function() {
+    const hash = window.location.hash.toLowerCase();
+
+    // Redirect based on hash
+    switch(hash) {
+      case "#discord":
+        window.location.href = "https://discord.com/invite/morot-moderation-support-981247140519108658";
+        break;
+      case "#faq":
+        window.location.href = "https://swehosting.pl?page=faq";
+        break;
+      case "#knowledge":
+        window.location.href = "https://swehosting.pl?page=knowledge";
+        break;
+      case "#knowledge-base":
+        window.location.href = "https://swehosting.pl?page=knowledge-base";
+        break;
+      case "#terms-of-service":
+        window.location.href = "https://swehosting.pl/terms.htm";
+        break;
+      default:
+        // If no hash or unknown hash, redirect to main domain
+        window.location.href = "https://www.swehosting.pl?page=403-not-allowed";
+        break;
+    }
+  }
+</script>
+</head>
+<body>
+<p>If you are not redirected automatically, <a href="https://www.swehosting.pl">click here to go to the main site</a>.</p>
+</body>
+</html>
