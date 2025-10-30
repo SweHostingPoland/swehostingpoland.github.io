@@ -1166,15 +1166,23 @@ input:checked + .slider:before {
         test: 0.1rem;
     }
 
-    .footer-section ul li a {
-    color: inherit;        /* use the li's color (#94a3b8) */
-    text-decoration: none; /* remove underline */
-    display: block;        /* makes whole li clickable */
+    /* Force link styling override */
+    .footer-section ul li a,
+    .footer-section ul li a:link,
+    .footer-section ul li a:visited,
+    .footer-section ul li a:hover,
+    .footer-section ul li a:active {
+    color: #94a3b8 !important;     /* normal color */
+    text-decoration: none !important; /* remove underline */
+    display: block;                /* make whole li clickable */
+    transition: color 0.3s ease;
     }
 
-   .footer-section ul li a:hover {
-    color: #60a5fa;        /* same hover color as li */
+    /* Hover effect to match your li:hover */
+    .footer-section ul li a:hover {
+    color: #60a5fa !important;
     }
-
+    
 }
+
 
