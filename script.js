@@ -22,11 +22,11 @@ const domainPricing = {
     popular: false
   },
   ".se": {
-    price: "$2/year",
+    price: "$4/year",
     popular: true
   },
   ".pl": {
-    price: "$2.5/year",
+    price: "$4/year",
     popular: true
   }
 };
@@ -293,4 +293,5 @@ document.addEventListener("DOMContentLoaded", function () {
   const _0x588b2b = document.createElement("style");
   _0x588b2b.textContent = "\n        @keyframes float {\n            0%, 100% { transform: translateY(0px); }\n            50% { transform: translateY(-10px); }\n        }\n        \n        .nav-link {\n            position: relative;\n            overflow: hidden;\n        }\n        \n        .nav-link::before {\n            content: '';\n            position: absolute;\n            top: 0;\n            left: -100%;\n            width: 100%;\n            height: 100%;\n            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);\n            transition: left 0.5s;\n        }\n        \n        .nav-link:hover::before {\n            left: 100%;\n        }\n        \n        .btn {\n            position: relative;\n            overflow: hidden;\n        }\n        \n        .btn::before {\n            content: '';\n            position: absolute;\n            top: 0;\n            left: -100%;\n            width: 100%;\n            height: 100%;\n            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);\n            transition: left 0.5s;\n        }\n        \n        .btn:hover::before {\n            left: 100%;\n        }\n    ";
   document.head.appendChild(_0x588b2b);
+
 });
