@@ -225,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   const _0x3d4b2d = document.getElementById("domain-search");
-  console.log("Made by Wowstar2504 (discord: @wowstar2504)");
+  console.log("Made by FadeMaze & Wowstar2504 (discord: @fademaze & @wowstar2504)");
   if (_0x3d4b2d) {
     _0x3d4b2d.addEventListener("keypress", function (_0x37400f) {
       if (_0x37400f.key === "Enter") {
@@ -295,3 +295,4 @@ document.addEventListener("DOMContentLoaded", function () {
   document.head.appendChild(_0x588b2b);
 
 });
+
