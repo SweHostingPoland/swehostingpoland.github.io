@@ -1,4 +1,4 @@
-const CACHE_NAME = "hostler-cache-v1";
+const CACHE_NAME = "hostler-cache-v2";
 const urlsToCache = [
   "/",
   "/manifest.json",
